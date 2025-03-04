@@ -32,12 +32,14 @@
         }
 
         nav {
-            width: 5vw;
+            width: 10vw;
             height: 100%;
             background-color: rgb(9, 9, 9);
             position: fixed;
             top: 0;
             left: 0;
+            background: linear-gradient(to right, #121212cb, #121212cb,#121212cb,transparent);
+            z-index: 10;
         }
 
         .icons {
@@ -47,13 +49,13 @@
         }
 
         .ic {
-            margin-top: 100px;
+            margin-top: 105px;
         }
 
         .left {
             width: 95vw;
             min-height: 100%;
-
+            overflow-x: none;
             /* margin: auto; */
             /* float: right; */
             margin-left: auto;
@@ -71,7 +73,7 @@
         .part1 {
             width: 50%;
             background-color: rgba(0, 0, 0, 0.503);
-           
+
             /* margin: auto; */
             /* margin-top: 20px; */
             border-radius: 10px;
@@ -88,7 +90,7 @@
             width: 95vw;
             position: relative;
 
-           
+            background-color: #ec2F4B;
         }
 
 
@@ -113,15 +115,15 @@
 
         .s22 {
             width: 100%;
-       
-             padding:15px;
+
+            padding: 15px;
             overflow: hidden;
             position: relative;
             bottom: 205px;
-            
-            background: linear-gradient(to bottom, transparent, #000000,#000000);
+
+            background: linear-gradient(to bottom, transparent, #000000, #000000);
             /* margin-left: 10px; */
-           
+
         }
 
         .s23 {
@@ -181,12 +183,12 @@
             display: flex;
             overflow-x: scroll;
             margin: 10px;
-            height:auto;
-            padding:30px 0px;
-            width:100%;
+            height: auto;
+            padding: 30px 0px;
+            width: 100%;
             padding-right: 50px;
             overflow-y: hidden;
-           
+
 
 
 
@@ -209,7 +211,7 @@
             margin-left: 35px;
             transition: all 0.3s ease;
             border-radius: 10px;
-            
+
         }
 
         .series:hover {
@@ -237,8 +239,9 @@
             padding: 10px 0;
             margin-bottom: -25px;
         }
-        .head3{
-            margin-left:40px;
+
+        .head3 {
+            margin-left: 40px;
         }
 
         .boxes3 {
@@ -247,7 +250,7 @@
             overflow: scroll;
             margin-top: 10px;
             height: auto;
-           
+
             padding: 30px 0px;
             padding-right: 50px;
             overflow-x: scroll;
@@ -284,38 +287,90 @@
             border-radius: 6px;
             transition: all 0.3s ease;
         }
-        .ic i:hover{
-           color: white;
+
+        .ic i:hover {
+            color: white;
             cursor: pointer;
+
         }
-       
+
         .box:hover {
             scale: 1.2;
         }
-        .h{
+
+        .h {
             border-radius: 6px;
-            width:90px;
+            width: 90px;
             border: 1px solid rgba(245, 245, 245, 0.633);
         }
-        .logo:hover{
+
+        .logo:hover {
             cursor: pointer;
         }
+        .new{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: ;
+        }
+        .newp{
+            margin-top: 15px;
+            opacity: 0;
+            
+        }
+        .ic:hover{
+            .newp{
+                opacity: 1;
+                color: rgba(255, 255, 255, 0.778);
+            }
+            .neww{
+                background: linear-gradient(to right, #000000,#000000 ,#1d1d1dbd,transparent);
+            }
+        }
+       
+        
     </style>
 </head>
 
 <body>
     <div class="main-container d-flex">
-        <nav>
+        <nav class="neww">
             <img src="jio.png" class="pt-3 mx-2 logo" width="58px">
-            <div class="d-flex justify-content-center align-items-center flex-column ic">
-                <i class="fa-solid fa-house fs- icons"></i>
-                <i class="fa-solid fa-magnifying-glass fs-5 icons"></i>
-                <i class="fa-solid fa-tv fs-5 icons"></i>
-                <i class="fa-solid fa-bowl-food fs-5 icons"></i>
-                <i class="fa-solid fa-person-running fs-5 icons"></i>
-                <i class="fa-solid fa-video fs-5 icons"></i>
-                <i class="fa-solid fa-list fs-5 icons"></i>
-                <i class="fa-regular fa-user fs-5 icons"></i>
+            <div class="d-flex justify-content-center align-items-start flex-column ic">
+                <div class="new">
+                    <i class="fa-solid fa-house fs- icons"></i>
+                    <p class="newp">Home</p>
+                </div>
+                <div class="new">
+                    <i class="fa-solid fa-magnifying-glass fs-5 icons"></i>
+                    <p class="newp">Search</p>
+                </div>
+                <div class="new">
+                    <i class="fa-solid fa-tv fs-5 icons"></i>
+                    <p class="newp">
+                        TV
+                    </p>
+                </div>
+                <div class="new">
+                    <i class="fa-solid fa-bowl-food fs-5 icons"></i>
+                    <p class="newp">Movies</p>
+                </div>
+                <div class="new">
+                    <i class="fa-solid fa-person-running fs-5 icons"></i>
+                    <p class="newp">Sports</p>
+                </div>
+                <div class="new">
+                    <i class="fa-solid fa-video fs-5 icons"></i>
+                    <p class="newp">Sparks</p>
+                </div>
+                <div class="new">
+                    <i class="fa-solid fa-list fs-5 icons"></i>
+                    <p class="newp">Categories</p>
+                </div>
+                <div class="new">
+                    <i class="fa-regular fa-user fs-5 icons"></i>
+                    <p class="newp">Myspace</p>
+                </div>
             </div>
 
         </nav>
@@ -325,7 +380,8 @@
                     <img src="dr.png" class="dr">
                 </div>
                 <div class="part2">
-                    <div class="d-flex"><img src="jio1.png"  class="logo" height="50px" style="border-radius: 5px;" alt="">
+                    <div class="d-flex"><img src="jio1.png" class="logo" height="50px" style="border-radius: 5px;"
+                            alt="">
                         <p class="fontt px-2 text-light"><strong>Daredevil</strong><br>Streaming From March 5</p>
                     </div>
                     <p class="text-light">Daredevil's secret life is on the line in this gripping <br>superhero drama !
@@ -358,22 +414,22 @@
                             <img src="m1.png" class="h" width="100px">
                         </div>
                         <div class="box">
-                            <img src="m2.png"  class="h" width="100px">
+                            <img src="m2.png" class="h" width="100px">
                         </div>
                         <div class="box">
-                            <img src="m3.png"  class="h" width="100px">
+                            <img src="m3.png" class="h" width="100px">
                         </div>
                         <div class="box">
-                            <img src="m4.png" class="h"  width="100px">
+                            <img src="m4.png" class="h" width="100px">
                         </div>
                         <div class="box">
-                            <img src="m5.png"  class="h" width="100px">
+                            <img src="m5.png" class="h" width="100px">
                         </div>
                         <div class="box">
-                            <img src="m6.png"  class="h" width="100px">
+                            <img src="m6.png" class="h" width="100px">
                         </div>
                         <div class="box">
-                            <img src="m7.png" class="h"  width="100px">
+                            <img src="m7.png" class="h" width="100px">
                         </div>
 
 
@@ -396,7 +452,7 @@
                         </div>
                         <h1 class="text-light  head head3">Latest TV Shows</h1>
                         <div class="boxes2">
-                            
+
 
                             <img src="1.png" alt="" width="180px" class="series s1">
                             <img src="2..png" alt="" width="180px" class="series">
@@ -423,7 +479,7 @@
                         </div>
                         <h1 class="text-light  head">Trending Now</h1>
                         <div class="boxes">
-                           
+
                             <img src="1.png" alt="" width="180px" class="series s1">
                             <img src="2.png" alt="" width="180px" class="series">
                             <img src="3.png" alt="" width="180px" class="series">
@@ -436,7 +492,7 @@
                         </div>
                         <h1 class="text-light  head head3">Latest TV Shows</h1>
                         <div class="boxes2">
-                            
+
 
                             <img src="1.png" alt="" width="180px" class="series s1">
                             <img src="2..png" alt="" width="180px" class="series">
